@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcf8f3">
+  <meta name="description" content="Contact et assistance de Menstoria.">
+  <title>Assistance · Menstoria</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background: #fcf8f3;
+      color: #492d3b;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      padding: 24px;
+      text-align: center;
+      border-bottom: 1px solid #eadcda;
+      font: 28px Georgia, serif;
+    }
+
+    header span { color: #a54166; }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 620px;
+      margin: auto;
+      padding: 55px 22px;
+      text-align: center;
+    }
+
+    .flower {
+      display: grid;
+      place-items: center;
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: #f4e2e5;
+      color: #a54166;
+      font-size: 44px;
+    }
+
+    .label {
+      color: #a54166;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 20px 0;
+      font: 46px/1.15 Georgia, serif;
+      letter-spacing: -1px;
+    }
+
+    h1 em { color: #a54166; }
+
+    p {
+      color: #75616a;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .contact {
+      margin: 30px 0;
+      padding: 28px 20px;
+      border: 1px solid #eadcda;
+      border-radius: 24px;
+      background: #fffdf9;
+    }
+
+    .email {
+      color: #a54166;
+      overflow-wrap: anywhere;
+      font-size: 14px;
+      text-underline-offset: 4px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 15px 26px;
+      border-radius: 40px;
+      background: #492d3b;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .button:hover { background: #a54166; }
+
+    .faq { text-align: left; }
+
+    details {
+      padding: 19px 0;
+      border-bottom: 1px solid #eadcda;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    details p { margin-bottom: 0; }
+    details a { color: #a54166; }
+
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid #a54166;
+      outline-offset: 5px;
+    }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: #75616a;
+      font-size: 12px;
+    }
+
+    @media (max-width: 400px) {
+      h1 { font-size: 38px; }
+      main { padding: 40px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>Menstoria<span>.</span></header>
+
+  <main>
+    <div class="flower" aria-hidden="true">✿</div>
+    <div class="label">Assistance Menstoria</div>
+
+    <h1>Besoin d’aide ?<br><em>Nous sommes là.</em></h1>
+
+    <p>
+      Une question sur l’application, ton abonnement ou tes données ?
+      Retrouve les réponses ci-dessous ou contacte-nous.
+    </p>
+
+    <section class="contact" aria-label="Nous contacter">
+      <p>Écris-nous à :</p>
+
+      <a class="email" href="mailto:sagetpaulhenry250@gmail.com">
+        sagetpaulhenry250@gmail.com
+      </a>
+
+      <br>
+
+      <a
+        class="button"
+        href="mailto:sagetpaulhenry250@gmail.com?subject=Assistance%20Menstoria"
+      >
+        Contacter l’assistance ↗
+      </a>
+    </section>
+
+    <section class="faq" aria-label="Questions fréquentes">
+      <details>
+        <summary>Comment résilier mon abonnement ?</summary>
+        <p>
+          Sur iPhone, ouvre Réglages → ton nom → Abonnements →
+          Menstoria. Tu pourras y gérer ton abonnement.
+          Supprimer l’application ne résilie pas l’abonnement.
+        </p>
+      </details>
+
+      <details>
+        <summary>J’ai payé, comment retrouver mon accès ?</summary>
+        <p>
+          Sur l’écran d’abonnement, choisis « Restaurer les achats ».
+          Utilise le compte Apple avec lequel tu as effectué l’achat
+          et vérifie que ton abonnement est toujours actif.
+          La restauration des achats ne restaure pas ton journal.
+        </p>
+      </details>
+
+      <details>
+        <summary>Comment supprimer mon journal ?</summary>
+        <p>
+          Ouvre Profil → Réinitialiser l’app, puis confirme.
+          Le profil et le journal actifs seront effacés.
+          Cette action ne résilie pas ton abonnement et ne supprime
+          pas les éventuelles anciennes sauvegardes du système.
+        </p>
+      </details>
+
+      <details>
+        <summary>Comment demander un remboursement ?</summary>
+        <p>
+          Pour un achat effectué auprès d’Apple, fais ta demande sur
+          <a href="https://reportaproblem.apple.com/">
+            reportaproblem.apple.com
+          </a>.
+          Apple examinera ta demande selon les conditions applicables.
+        </p>
+      </details>
+
+      <details>
+        <summary>Comment signaler un problème technique ?</summary>
+        <p>
+          Envoie-nous un e-mail avec le modèle de ton appareil,
+          la version de Menstoria et les étapes du problème.
+          Si tu joins une capture, masque tes informations personnelles.
+          Ne partage jamais ton mot de passe ou tes coordonnées bancaires.
+        </p>
+      </details>
+    </section>
+
+    <p style="margin-top: 30px; font-size: 12px;">
+      L’assistance répond aux questions techniques et d’abonnement.
+      Pour une question médicale, consulte un professionnel de santé.
+    </p>
+  </main>
+
+  <footer>© 2026 Menstoria · À l’écoute de toi.</footer>
+</body>
+</html>
